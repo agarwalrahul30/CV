@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rahul Agarwal</title>
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="Professional_icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,41 +25,73 @@
 
     <div class="middle-container">
       <div class="profile">
-        <div>
+        <div data-title="About Me" data-intro="Get to know me better by reading this.">
           <img id="profile-pic" src="Images/circle-cropped.png" alt="" width="33%">
           <h2>Hello.</h2>
           
-          <p>I am a pre-final year student at Vellore Institute of Technology, Vellore. I love to develop web apps and mobile apps. The sense of creating something beautiful and useful of my own is what drives me to go the extra mile everytime. I'm sure I can make a difference launching you on the World Wide Web.🚀</p>
+          <p>I am a pre-final year student at Vellore Institute of Technology, Vellore. I love to develop web apps and mobile apps. The sense of creating something beautiful and useful on my own is what drives me to go the extra mile everytime. Scroll down to know me better :)</p>
         </div>
       </div>
 
       <hr>
       
       <div class="skills">
-        <h1 class="heading">My Skills</h1>
+        <h1 class="heading" data-title="Skills" data-intro="Here are the skills I'm good at.">My Skills</h1>
         <div class="skill-row">
           <img class="skill-1-img" src="Images/programming.png" alt="" width="30%">
           <h2>Web Development</h2>
-         <p>I have 2 years of experience in coding and developing websites. In Frontend, I specialize in: HTML, CSS, Bootstap, Javascript, Jquery and in Backend: Node.js, Express, EJS.</p>
+          <p>I have 2 years of experience in coding and developing websites. In Frontend, I specialize in: HTML, CSS, BootStrap, JavaScript, Jquery and in Backend: Node.js, Express, EJS, MongoDB with Mongoose.</p>
         </div>
         <div class="skill-row">
           <img class="skill-2-img" src="Images/mobile-app.png" alt="" width="30%">
           <h2>Android App Development</h2>
-          <p>As fascinating as it sounds, I'm sure this is everyone's dream to see an app developed of his own imagination on his mobile. I am good at working in Android Studio with Java and XML.</p>
+          <p>As fascinating as it sounds, this was my dream come true to see my own app running on my mobile. I work in Android Studio with Java and XML.</p>
         </div>
-        <h3>⬇ You can find all the projects I built in my github profile below ⬇</h3>
+        <div class="skill-row">
+          <img class="skill-1-img" src="Images/dsa.png" alt="" width="30%">
+          <h2>Programming and Problem Solving</h2>
+          <p>I find immense joy in tackling new problems and solving it with the help of various data structures and algorithm. Yes, you can call me a "geek". I can't deny the fact that I find it absolutely amusing what huge difference a few lines of code can have while solving complex real world problem.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="internships">
+        <h1 class="headings">Internships</h1>
+        <div class="skill-row">
+          <img class="skill-1-img" src="Images/Heal Me.png" alt="" width="30%">
+          <h2>Heal Me - Online Medical Portal</h2>
+          <p>I was responsible for improving the UX of the existing website and adding on some functionalities. Tasks involved - </p>
+          <p>1. Creating a fully customized dropdown Menu having keyboard navigation functionality.</p>  
+          <p>2. User Onboarding using Intro.js and many more.</p>
+          <!-- <p><strong>LOR - </strong>https://drive.google.com/file/d/1zKPsLBEqpvNHF3dzV7CXpGVFcmFhtAni/view?usp=sharing</p> -->
+        </div>
+        <div class="skill-row">
+          <img class="skill-2-img" src="Images/Foxmula-modified (1).png" alt="" width="30%">
+          <h2>Foxmula - The Smart Way</h2>
+          <p>Foxmula was my stepping stone into the world of development. I was new to Java and programming. They had a training program where we are given good quality resources to get equipped with skills. Later, after fininshing my program, I was able to help them with app development.</p>
+        </div>
       </div>
     </div>
+
+      <hr>
+
+      <div class="projects">
+        <h1 class="headings">Projects</h1>
+        <h3>⬇ You can find codes for all the projects I built in my github profile below ⬇</h3>
+        <a href="https://github.com/agarwalrahul30/agarwalrahul30" class="btn">TAKE ME TO GITHUB</a>
+      </div>
     
-    <hr>
-    
+      <hr>
+
+
     <div class="bottom-container">
       <div class="contact-me">
         <div class="touch">
           <h1 class="heading">Get In Touch</h1>
-          <h2>(If you feel we can make a difference together)</h2>
-          <p id="quote">"There are numerous million dollar ideas that failed simply because it came in the mind of a lazy person."</p>
-          <a href="mailto:mail.rainbox@gmail.com" class="btn">CONTACT ME</a>
+          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="501cf8ef-7dfd-4109-83c8-5313ba1dca78" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          <br>
+          <a href="mailto:rahul.agarwal2019a@vitstudent.ac.in" class="btn">CONTACT ME</a>
         </div>
 
         <div class="footer">
@@ -67,10 +100,25 @@
           <a class="footer-link" href="https://github.com/agarwalrahul30/agarwalrahul30">Github</a>
           <p class="line">|</p>
           <a class="footer-link" href="https://www.codechef.com/users/mailrainbox">CodeChef</a>
+          <p class="line">|</p>
+          <a class="footer-link" href="https://auth.geeksforgeeks.org/user/mailrainbox/practice/">Geeksforgeeks</a>
           <p id="copyright">©2022 Rahul Agarwal</p>
         </div>
       </div>
     </div>
-    
+    <!-- <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script>
+      let tour = introJs();
+      tour.setOptions({
+        steps: [
+          {
+            title: "Welcome",
+            intro: "Hi! Let me show you around"
+          }
+        ]
+      });
+      tour.start();
+      // introJs().start();
+    </script> -->
   </body>
 </html>
